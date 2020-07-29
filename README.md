@@ -11,7 +11,7 @@ Pluggable framework for managing the temporary internal storage of a containers 
 
 *Find out which storage driver is configured with docker info. 
 ---------------------------------------------------
-How to override the default storage driver. 
+How to override the default storage driver.
 Explicitly set your storage driver. Edit the below file in vim 
 
 sudo vi /usr/lib/systemd/system/docker.service
