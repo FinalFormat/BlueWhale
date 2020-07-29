@@ -22,8 +22,10 @@ sudo systemctl restart docker
 
 Recommended way to change the config file
 sudo vi /etc/docker/daemon.json
+
 {
   "storage-driver": "devicemapper"
 }
+
 sudo systemctl restart docker
 sudo systemctl status docker
