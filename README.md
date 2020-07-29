@@ -1,7 +1,8 @@
 # BlueWhale
 Docker DCA Cram Notes 
 
-*Storage Drivers
+Storage Drivers
+---------------
 
 Pluggable framework for managing the temporary internal storage of a containers writable layer. 
 
@@ -9,7 +10,7 @@ Pluggable framework for managing the temporary internal storage of a containers 
 	* devicemapper Block storage, more efficient for doing lots of writes. Default for Centos7 and earlier. 
 
 
-*Find out which storage driver is configured with docker info. 
+Find out which storage driver is configured with docker info. 
 ---------------------------------------------------
 How to override the default storage driver.
 Explicitly set your storage driver. Edit the below file in vim 
