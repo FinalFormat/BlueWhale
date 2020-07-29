@@ -15,9 +15,13 @@ How to override the default storage driver.
 Explicitly set your storage driver. Edit the below file in vim 
 
 sudo vi /usr/lib/systemd/system/docker.service
+
 ExecStart=/usr/bin/dockerd --storage-driver devicemapper
+
 #Anytime we do a change to a unit file, we need to run the commands below. 
+
 sudo systemctl daemon-reload
+
 sudo systemctl restart docker
 
 Recommended way to change the config file
@@ -28,4 +32,5 @@ sudo vi /etc/docker/daemon.json
 }
 
 sudo systemctl restart docker
+
 sudo systemctl status docker
