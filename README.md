@@ -1,5 +1,6 @@
 # BlueWhale
-Docker DCA Cram Notes 
+Docker DCA Cram Notes
+----------------------
 
 Storage Drivers
 ---------------
@@ -29,7 +30,9 @@ Recommended way to change the config file
 sudo vi /etc/docker/daemon.json
 
 {
+
   "storage-driver": "devicemapper"
+  
 }
 
 sudo systemctl restart docker
